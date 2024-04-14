@@ -1,0 +1,13 @@
+from math import *
+x = float(input("Enter the var:\t"))
+print(sqrt(x))
+print(ceil(x))
+print(floor(x))
+print(fabs(x))
+print(log(x))
+print(sin(x))
+print(tan(x))
+y = float(input("Enter the var for fabs() and abs():\t"))
+temp=int(y)
+print("Fabs:",fabs(y))
+print("Abs:",abs(temp))
