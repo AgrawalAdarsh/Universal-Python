@@ -1,0 +1,6 @@
+s = input("Enter your string: ")
+print("UpperCase whole:\t",(s.upper()))
+print("LowerCase whole:\t",(s.lower()))
+print("Swap up to low and low to up:\t",(s.swapcase()))
+print("Convert 1st character in 'everyword' to be in upper case rest lower:\t",(s.title()))
+print("Only 1st char will conv to Upper rest all low:\t",(s.capitalize()))

@@ -1,0 +1,17 @@
+f = open("randtext.txt","r")
+fls = list(f)
+fls = str(fls)
+fls = fls.strip().split(str(f.readlines()))
+fls = [line.replace('\\n'," ").replace('\s',' ').replace(" \' ",' ') for line in fls]
+fls = str(fls)
+fls = fls.split(',')
+print("Now:\t",len(fls))
+#print(fls)
+for i in range(len(fls)):
+	print(fls[i])
+print("Filename:\t",f.name)
+print("Is file readable ?:\t",f.readable())
+print("Is file writable ?:\t",f.writable())
+print("Is file close ?:\t",f.closed)
+f.close()
+print("Is file close after using close?:\t",f.closed)
